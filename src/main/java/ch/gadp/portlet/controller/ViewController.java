@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License along with
  * liferay-spring-mvc-portlet. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.sapphireinnovation.ppa.ui.name.portlet.controller;
+package ch.gadp.portlet.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.sapphireinnovation.ppa.ui.name.portlet.controller;
+package ch.gadp.portlet.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
