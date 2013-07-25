@@ -32,9 +32,9 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
  */
 @Controller
 @RequestMapping("VIEW")
-public class HomeController {
+public class ViewController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(ViewController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -45,12 +45,11 @@ public class HomeController {
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate);
 		
-		return "home";
+		return "view";
 	}
 	
 }

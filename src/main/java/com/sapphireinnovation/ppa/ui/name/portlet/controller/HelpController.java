@@ -1,6 +1,5 @@
 package com.sapphireinnovation.ppa.ui.name.portlet.controller;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -15,7 +14,7 @@ import java.util.Locale;
 @Controller
 @RequestMapping("HELP")
 public class HelpController {
-    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ViewController.class);
 
     /**
      * Simply selects the edit view to render by returning its name.
@@ -26,7 +25,6 @@ public class HelpController {
 
         Date date = new Date();
         DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-
         String formattedDate = dateFormat.format(date);
 
         model.addAttribute("serverTime", formattedDate);

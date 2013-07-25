@@ -11,18 +11,11 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * Created with IntelliJ IDEA.
- * User: guy
- * Date: 24.07.13
- * Time: 22:01
- * To change this template use File | Settings | File Templates.
- */
 
 @Controller
 @RequestMapping("EDIT")
 public class EditController {
-    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(ViewController.class);
 
     /**
      * Simply selects the edit view to render by returning its name.
@@ -33,7 +26,6 @@ public class EditController {
 
         Date date = new Date();
         DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-
         String formattedDate = dateFormat.format(date);
 
         model.addAttribute("serverTime", formattedDate);
